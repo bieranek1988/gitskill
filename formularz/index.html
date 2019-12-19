@@ -11,13 +11,13 @@
    <h3><em>Form fundamentals</em></h3>
    
    <fieldset>
-       <legend>Customer info</legend>
+       <legend><strong>Customer info</strong></legend>
        
        <label for="name">Name:</label>
        <input type="text" placeholder="Enter Your Name"><br/><br/>
        
        <label for="phone">Telephone:</label>
-       <input type="text" placeholder="Pattern: 1-234-567-8910"><br/><br/>
+       <input type="text" placeholder="1-234-567-8910" pattern="[1-234-567-8910]{4}"><br/><br/>
        
        <label for="e-mail">E-mail address:</label>
        <input type="text" placeholder="Enter Your e-mail address">
@@ -28,10 +28,14 @@
        <legend>Books</legend>
        
        <input type="text">
+       <label for="quantity">Quantity (Maximum 5):</label>
        
+       <input type="number" name="quantiti" min="1" max="5">
+    
    </fieldset>
    
-   <input type="submit" >
+   
+   <input type="submit">
     
 </body>
 </html>
